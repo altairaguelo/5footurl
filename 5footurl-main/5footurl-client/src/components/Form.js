@@ -36,11 +36,11 @@ class Form extends React.Component{
 
         //preferred/user generated alias section
         var generatedKey = nanoid(5);
-        var generatedURL = "5FootURL.com/" + generatedKey
+        var generatedURL = "fivefooturl.onrender.com/" + generatedKey
 
         if (this.state.preferedAlias !== ''){
             generatedKey = this.state.preferredAlias
-            generatedURL = "5FootURL.com/" + this.state.preferredAlias
+            generatedURL = "fivefooturl.onrender.com/" + this.state.preferredAlias
         }
 
         const db = getDatabase();
@@ -169,7 +169,7 @@ class Form extends React.Component{
                         <label htmlFor="basic-url">Your 5FootURL</label>
                         <div className="input-group mb-3">
                             <div className="input-group-prepend">
-                                <span className="input-group-text">5FootURL.com/</span>
+                                <span className="input-group-text">fivefooturl.onrender.com</span>
                             </div>
                             <input
                                 id="preferredAlias"
